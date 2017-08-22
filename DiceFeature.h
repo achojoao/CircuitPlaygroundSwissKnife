@@ -12,23 +12,17 @@
 class DiceFeature: public Feature {
   
 public:
-  DiceFeature() {  
-  // Seed the random function with noise
-  int seed = 0;
-  
-  seed += analogRead(12);
-  seed += analogRead(7);
-  seed += analogRead(9);
-  seed += analogRead(10);
-
-  randomSeed(seed);
-
-  // Initialize the global states
-  newRoll = false;
-  rolling = false;
-  tapDone = false;
+  DiceFeature() {
+    // Initialize the global states
+    newRoll = false;
+    rolling = false;
+    tapDone = false;
   }
   ~DiceFeature() {}
+
+  virtual void setup() {
+    
+  }
 
   virtual void loop() {
     // Compute total acceleration

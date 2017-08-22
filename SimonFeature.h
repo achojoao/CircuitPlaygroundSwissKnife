@@ -34,6 +34,10 @@ public:
   }
   ~SimonFeature() {}
 
+  virtual void setup() {
+    
+  }
+
   virtual void loop() {
     
     if (!gameFinished) {

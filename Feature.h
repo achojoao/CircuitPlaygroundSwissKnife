@@ -6,6 +6,7 @@ public:
   virtual ~Feature() {}
 
   virtual void loop() = 0;
+  virtual void setup() = 0;
   virtual void startPressed() = 0;
   virtual void modePressed() = 0;
   virtual void tapDetected() = 0;
