@@ -6,6 +6,7 @@ A bunch of apps for Adafruit's Circuit Playground
 
 Features
 
-- Binary clock with alarm
+- Binary clock with alarm and snooze
+- Flashlight
 - Simon game
 - Digital dice
